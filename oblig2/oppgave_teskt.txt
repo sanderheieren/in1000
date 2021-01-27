@@ -9,7 +9,10 @@ Oppgave 1, 2 og 4 var alle enkle. Og det er en klassisk måte å bli kjent med e
 gjennom konverteringer. Teoribiten i oppgave 4 var nesten for enkel, dette kunne vi allerede fra 
 første uke føler jeg. 
 Oppgave 5 er i prinsippet ikke spesiell vanskelig, men den kreative biten å finne på hva man skal
-lage er noe som ikke er min sterkeste side. Det er derfor viktig for meg å gjøre oppgaver som dette også. 
+lage er noe som ikke er min sterkeste side. Det er derfor viktig for meg å gjøre oppgaver som dette også.
+Støttet også på et problem her med 'UnboundLocalError: local variable 'antall_spm' referenced before assignment',
+så jeg må bli bedre kjent med hvordan scoping fungerer i python
+
 
 1 b) 
 Jeg brukte ca 2,5t på obligen. Jeg vet veldig fort hva jeg skal gjøre, men det å skrive kommentarer

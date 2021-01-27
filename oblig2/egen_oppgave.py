@@ -1,6 +1,8 @@
 # 4 quiz spørsmål om teknologier som brukes ofte i web browseren
 
 def sporsmaal(spm):
+    global antall_spm
+    antall_spm += 1
     print('_______________')
     print(spm)
     return input()
@@ -44,7 +46,7 @@ else:
     feil()
 
 print('_______________')
-print(f"Du klarte å oppnå {riktige_svar} poeng!")
+print(f"Du klarte å oppnå {riktige_svar} / {antall_spm} poeng!")
 if riktige_svar == 0:
     print("Øvelse gjør mester")
 elif riktige_svar == 4:
