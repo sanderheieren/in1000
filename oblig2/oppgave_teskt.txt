@@ -1,0 +1,21 @@
+1 a)
+Oppgaven var ganske enkel og en fin måte å bli introdusert hvordan kodeflyt og kodeforståelse
+foregår, samtidig som man fikk prøvd seg på prosedyrer. 
+I oppgave 3, jeg synes er kanskje litt forvirrende er om kompilatoren lester først selve funksjonen
+som blir kalt på, eller om den blir lagt i stacken og blir derfor 'lest' etter det funksjonen
+kaller på blir lest. Jeg synes forøvrig det virker logisk at den leser selve funksjonskallet først,
+og dermed leser de respektive linjene inni selve funksjonen/prosedyren.
+Oppgave 1, 2 og 4 var alle enkle. Og det er en klassisk måte å bli kjent med et programmeringspråk
+gjennom konverteringer. Teoribiten i oppgave 4 var nesten for enkel, dette kunne vi allerede fra 
+første uke føler jeg. 
+Oppgave 5 er i prinsippet ikke spesiell vanskelig, men den kreative biten å finne på hva man skal
+lage er noe som ikke er min sterkeste side. Det er derfor viktig for meg å gjøre oppgaver som dette også. 
+
+1 b) 
+Jeg brukte ca 2,5t på obligen. Jeg vet veldig fort hva jeg skal gjøre, men det å skrive kommentarer
+og gjøre det oversiktelig for brukeren å lese tar også litt tid. Samtidig som jeg måtte skrive
+oppgave 3 på papir + scanne. Og at jeg måtte finne på min egen oppgave for nummer 5. 
+
+Alle oppgavene fungerer som de skal
+
+
