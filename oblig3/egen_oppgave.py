@@ -51,14 +51,14 @@ def sporsmaal(spm, spmNr):
 
 
 def riktig():
-    print('Bra, det var riktig!\n')
+    print('Good, that was correct!\n')
 
 
 def feil():
-    print('Det var dessverre ikke riktig.\n')
+    print('Unfortunately, that was not correct\n')
 
 
-print('Velkommen til Web Quiz 101')
+print('Welcome to Web Quiz 101')
 
 for x in range(len(quizData)):
     svar = sporsmaal(quizData[x]['question'], x)
@@ -69,12 +69,12 @@ for x in range(len(quizData)):
         feil()
 
 print('_______________')
-print(f"Du klarte å oppnå {riktige_svar} / {antall_spm} poeng!")
+print(f"You mangaged to get {riktige_svar} / {antall_spm} points!")
 if riktige_svar == 0:
-    print("Øvelse gjør mester")
+    print("Practice makes perfect")
 elif riktige_svar == 4:
-    print("Alt riktig!")
+    print("You arer a champion!")
 elif riktige_svar <= 2:
-    print("Dette var ok, men du kan bedre")
+    print("This was ok, but you can do better")
 else:
-    print('Ikke så gærnt!')
+    print('Not that bad!')
