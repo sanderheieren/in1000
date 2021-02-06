@@ -13,7 +13,7 @@ varer = {
 # Printer ut inneholdet
 print(f"Inneholdet i varene er:\n{varer}")
 
-# Definerer prosedyre for å legge til varer i 'varer'-ordboka
+# 2, Definerer prosedyre for å legge til varer i 'varer'-ordbok
 
 
 def leggTilVareNavn():
