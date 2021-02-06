@@ -75,7 +75,7 @@ if riktige_svar == 0:
     print("Øvelse gjør mester")
 elif riktige_svar == 4:
     print("Alt riktig!")
-elif riktige_svar == 2:
+elif riktige_svar <= 2:
     print("Dette var ok, men du kan bedre")
 else:
     print('Ikke så gærnt!')
