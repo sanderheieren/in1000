@@ -6,6 +6,8 @@ Føler ofte kodene jeg skriver er veldig direkte, og bør kanskje øve litt mer 
 å få det strukturert. Dette er vel skille mellom deklartiv og imperativ programmering
 til en viss grad. Vil også bli flinkere på å formatere utskriftene mine. Synes ofte
 det kanskje kan være litt vanskelig å lese i terminalen, så der må jeg ta et grep.
+En annen ting jeg ikke får helt til å skjønne er scopet i python, hvorfor må jeg deklarer global foran
+antall_spm? Erroren er referenced before assignment, men jeg deklararer jo den helt øverst i filen?
 b) Jeg brukte ca 3t på oppgaven, dette er nok fordi jeg leser over slidsa rett før obligen også går jeg rett på den.
 Jeg tror jeg fikk til alle oppgavene, om jeg har forstått oppgaveteksten korrekt.
 

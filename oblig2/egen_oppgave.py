@@ -1,4 +1,7 @@
 # 4 quiz spørsmål om teknologier som brukes ofte i web browseren
+riktige_svar = 0
+antall_spm = 0
+
 
 def sporsmaal(spm):
     global antall_spm
@@ -17,9 +20,6 @@ def feil():
 
 
 print('Velkommen til Web Quiz 101')
-
-riktige_svar = 0
-antall_spm = 0
 
 if sporsmaal('Hvilket programmeringspråk kjører i web browseren?').lower() == "javascript":
     riktige_svar += 1
@@ -45,7 +45,7 @@ if sporsmaal('I hvilket år ble JavaScript lansert?') == "1996":
 else:
     feil()
 
-print('_______________')
+print('______________________')
 print(f"Du klarte å oppnå {riktige_svar} / {antall_spm} poeng!")
 if riktige_svar == 0:
     print("Øvelse gjør mester")
