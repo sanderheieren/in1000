@@ -61,7 +61,6 @@ def feil():
 print('Velkommen til Web Quiz 101')
 
 for x in range(len(quizData)):
-    # print(quizData[x]["question"], 'i range')
     svar = sporsmaal(quizData[x]['question'], x)
     if svar.lower() == quizData[x]['correct']:
         riktige_svar += 1
