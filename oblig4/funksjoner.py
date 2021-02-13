@@ -17,11 +17,20 @@ tekst = input('Vær vennlig og skriv inn en vilkårlig tekstreng:\n')
 bokstav = input(
     'Skriv inn en bokstav, og jeg skal finne antall forekomster av bokstaven.(Det skilles mellom stor og liten bokstav):\n')
 
+# Definere funksjon som skal telle antall bokstaver i en tekst, med feilsøking
+
 
 def tellForekomst(minTekst, minBokstav):
+    if(len(minTekst) == 0 or len(minBokstav) == 0):
+        print('Her skjedde det noe feil. Prøv igjen\n')
+        nyTekst = input('Vær vennlig og skriv inn en vilkårlig tekstreng:\n')
+        nyBokstav = input(
+            'Skriv inn en bokstav, og jeg skal finne antall forekomster av bokstaven.(Det skilles mellom stor og liten bokstav):\n')
+        tellForekomst(nyTekst, nyBokstav)
+        return
     total = 0
-    for letter in tekst:
-        if(letter == bokstav):
+    for letter in minTekst:
+        if(letter == minBokstav):
             total += 1
     if(total == 1):
         print(f'{minBokstav} kom {total} gang i "{minTekst}"')
