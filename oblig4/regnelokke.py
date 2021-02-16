@@ -29,7 +29,7 @@ print(f"\nsummen av alle tallene i listen er: {minSum}\n")
 
 minsteTall = float('inf')
 størsteTall = float('-inf')
-print(størsteTall < 50)
+
 for x in range(len(listeMedTall)):
     if listeMedTall[x] < minsteTall:
         minsteTall = listeMedTall[x]
