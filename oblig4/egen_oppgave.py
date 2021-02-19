@@ -50,5 +50,3 @@ while(True):
 
     elif kommando == '0':
         break
-
-        print()

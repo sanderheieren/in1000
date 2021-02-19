@@ -34,4 +34,4 @@ print(f'>>>Det er {antallOrd} ord i setningen din.')
 for x in unikeOrd:
     antallGanger = unikeOrd[x]
     print(
-        f">>>Ordet '{x}' forekommer {unikeOrd[x]} ganger, og har {antallBokstaverIOrd(x)} bokstaver")
+        f">>>Ordet '{x}' forekommer {antallGanger} ganger, og har {antallBokstaverIOrd(x)} bokstaver")
