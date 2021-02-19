@@ -1,0 +1,10 @@
+1:
+a) Jeg synes denne type innlevering var morsom og det begynner å bli et skille om man faktisk forstår det man holder på med. Det begynner å bli mer komplekst og man må bruke flere ting samtidig som man har lært tidligere. Det eneste jeg får tid til å programmere er obligene, så ofte glemmer jeg mellom hver gang hva jeg lærte forrige uke og må dermed gå tilbake. Ting kommer ikke naturlig til meg, og jeg må ofte søke opp på google enkle ting som jeg kanskje jeg burde ha i fingrene naturlig. Føler uansett at programmering er mye om å søke seg rundt og forstå det man leser, så det er forsåvidt en egenskap jeg tar med meg videre. Jeg vet jeg bør gjøre mer Trix-oppgaver, men kort forklart har jeg veldig fulle dager, så tusen takk for utsettelse!! Settes pris på.
+
+b) 4 timer vil jeg si. 
+
+Tror jeg klarte alle oppgavene, med mindre det er noe jeg har misforstått.
+
+iv. Hva var poenget med den siste oppgaven i reiseplan.py? Det ble jo til at man bare printet ut en tilfeldig ting basert på indeksene gitt fra bruker? Burde ikke oppgaven være noe sånn som at det blir tilfeldig generert en reiseplan med dato, sted og et plagg de må ha med? 
+Og, når det kommer til å legge inn dato osv, finnes det noen verktøy som gjør det enklere å jobbe med det enn å bare skrive inn alt som en string? det var derfor jeg safet meg med å bare skrive årstidene isteden for mnd og dato. 
+Vil også gjerne ha tilbakemelding på hvordan jeg løste siste deloppgave i ordtelling . Jeg liker ikke ar jeg måtte loope gjennom unikeOrd to ganger for å få til det jeg gjøre. Følte jeg gjorde det på en litt amatør måte og ikke brukte de funksjonene jeg hadde lagd. En annen ting jeg vil få vite er hvordan vil det være best måte å formatere print-utskriftene basert på om et ord kommer en gang eller flere ganger? for det ser dumt ut med 'hei' kommer 1 ganger
