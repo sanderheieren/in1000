@@ -12,7 +12,7 @@ def les_inn_temperatur(filnavn):
     return temperatur
 
 
-# print(les_inn_temperatur("max_temperatures_per_month.txt"))
+print(les_inn_temperatur("max_temperatures_per_month.txt"))
 
 # 2 skal finne varmeste dagen i hver mnd og oppdatere ordbok underveis
 
@@ -37,3 +37,16 @@ varmeRekordForHverMnd = les_inn_temperatur("max_temperatures_per_month.txt")
 listeMedVarmesteTemp = finn_varmerekord(
     varmeRekordForHverMnd, "max_daily_temperature_2018.txt")
 print(listeMedVarmesteTemp)
+
+# 3 skal skrive ut oppdatert liste til ny fil
+
+
+def oppdaterVarmesteTemp(listeMedVarmesteTemp, filnavn):
+    min_fil = open(filnavn, "w")
+    for key in listeMedVarmesteTemp:
+        linje = f"{key},{listeMedVarmesteTemp[key]}\n"
+        min_fil.write(linje)
+    min_fil.close()
+
+
+oppdaterVarmesteTemp(listeMedVarmesteTemp, 'oppdatertTemperatur.txt')
