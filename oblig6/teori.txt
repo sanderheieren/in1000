@@ -1,0 +1,12 @@
+1) Innkapsling er det som skjer bak kulisenne. Det er en måte for å skjule vekk
+alle detaljene som selve objektet skal ha tilgang til og kontrollere selv. 
+2) Grensesnittet til en klasse er hvordan man intragerer og kommuniserer med 
+enheten. Det er det som er vist på utsiden og er de ulike handlingene du kan
+gjøre med gjenstanden. 
+Det skiller seg fra implementasjonen av en klasse om hva som er tilgjengelig for 
+omverdenen og ikke. Det skilles mellom hva som er privat og hva som er public, selv om 
+det ikke finnes noe underbyggende mekanikk i python for å forhindre dette.
+3) instansmetode er det som er en funksjon definert på et objekt. Denne metoden vil ha
+tilgang til data til sin spesfikke instans av objektet. derfor kan du definere lik metode
+på klassen, men få ulike svar basert på de ulike objektene.
+ 
