@@ -13,10 +13,11 @@ class Sang:
 
 # 3 metode som sjekker artist
     def sjekkArtist(self, navn):
-        navnDeler = navn.split()
-        for navn in navnDeler:
-            if len(navn) > 1 and navn.lower() in self._artist.lower():
+        navnDeler = navn.lower().split()
+        for navner in navnDeler:
+            if len(navner) > 1 and navner in self._artist.lower():
                 return True
+        return False
 
     def sjekkTittel(self, tittel):
         return self._tittel.lower() == tittel.lower()
