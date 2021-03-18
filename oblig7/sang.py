@@ -13,9 +13,9 @@ class Sang:
 # 2 metode som spiller av sangen
     def spill(self):
         wave_obj = sa.WaveObject.from_wave_file(self._filnavn)
+        print(f'Spiller {self._tittel} av {self._artist}')
         play_obj = wave_obj.play()
         play_obj.wait_done()
-        print(f'Spiller {self._tittel} av {self._artist}')
 
 # 3 metode som sjekker artist
     def sjekkArtist(self, navn):
