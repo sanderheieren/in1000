@@ -11,7 +11,7 @@ def hovedprogram():
     allMusikk.spillAlle()
     print()
 
-    nySang = Sang("Jahn Teigen", "Mil etter mil")
+    nySang = Sang("Jahn Teigen", "Mil etter mil", 'adagio.way')
     print("Spiller ny sang:")
     allMusikk.spillSang(nySang)
     print()

@@ -13,7 +13,7 @@ class Spilleliste:
             data = linje.strip().split(';')
             artist = data[0]
             tittel = data[1]
-            sang = Sang(artist, tittel)
+            sang = Sang(artist, tittel, 'adagio.wav')
             self._sanger.append(sang)
         fil.close()
 
@@ -45,7 +45,3 @@ class Spilleliste:
             if sang.sjekkArtist(artistnavn):
                 sanger.append(sang)
         return sanger
-
-
-# spilleliste = Spilleliste('topp 40')
-# spilleliste.lesFraFil('musikk.txt')

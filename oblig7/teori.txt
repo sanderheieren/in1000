@@ -1,0 +1,12 @@
+3 b)
+Den største årsaken til hvorfor det velges en liste framfor en ordbok
+er at spillelisten er en kolleksjon som er uordnet. Hadde man brukt en ordbok
+kunne det vært en utfordnig å finne på passende nøkler, fordi om det 
+for eksempel ville være artistnavnet, ville det bare ha overskrevet
+den daværende nøkkelen, sånn som f.eks med 'Queen'.
+
+c)
+Det kan være to grunner. Den ene kan være at man ikke ønsker å laste
+inn alle sangene fra filen, og dermed vil du ha mange sanger som
+du ikke vil skal være der. Den andre grunnen kan være om du ikke har
+noe fil med sanger enda, og du bare vil legge til enkeltsanger.

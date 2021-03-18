@@ -2,7 +2,7 @@ from sang import Sang
 
 
 def hovedprogram():
-    sang1 = Sang("Lady Gaga and Bradley Cooper", "Shallow")
+    sang1 = Sang("Lady Gaga and Bradley Cooper", "Shallow", 'adagio.way')
 
     # Metoden spill
     print("Spiller av test-objekt:")
