@@ -38,79 +38,42 @@ class Spillebrett:
     def oppdatering(self):
         pass
 
-    def finnNabo(self, x, y):
-        nabo = []
-        if x != 0:
-            nabo.append(self._rutenett[y][x-1])
+    def finnNabo(self, rad, kolonne):
+        naboCeller = []
+        # nabotopper for cellen
+        if rad != 0:
+            naboCeller.append(self._rutenett[rad - 1][kolonne])
             try:
-                nabo.append(self._rutenett[y+1][x-1])
+                naboCeller.append(self._rutenett[rad - 1][kolonne + 1])
             except IndexError:
                 pass
-            if y != 0:
-                nabo.append(self._rutenett[y-1][x-1])
+            if kolonne != 0:
+                naboCeller.append(self._rutenett[rad - 1][kolonne - 1])
 
-        if y != 0:
+        # venstrenaboer for cellen
+        if kolonne != 0:
+            naboCeller.append(self._rutenett[rad][kolonne - 1])
             try:
-                nabo.append(self._rutenett[y-1][x+1])
+                naboCeller.append(self._rutenett[rad + 1][kolonne - 1])
             except IndexError:
                 pass
-            nabo.append(self._rutenett[y-1][x])
 
+        # resterende naboer for cellen
         try:
-            nabo.append(self._rutenett[y][x+1])
+            naboCeller.append(self._rutenett[rad + 1][kolonne + 1])
         except IndexError:
             pass
         try:
-            nabo.append(self._rutenett[y+1][x+1])
+            naboCeller.append(self._rutenett[rad + 1][kolonne])
         except IndexError:
             pass
         try:
-            nabo.append(self._rutenett[y+1][x])
+            naboCeller.append(self._rutenett[rad][kolonne + 1])
         except IndexError:
             pass
 
-        for naboen in nabo:
-            print(naboen)
+        return naboCeller
+       
 
-        return nabo
-
-        # trenger jeg denne?celle = self._rutenett[rad-1][kolonne-1]
-        # naboCeller = []
-        # if rad == 0:
-        #     if kolonne == 0:
-        #         naboCeller.extend([self._rutenett[rad + 1][kolonne], self._rutenett[rad][kolonne + 1], self._rutenett[rad + 1][kolonne + 1]])
-        #     elif kolonne == self._kolonner - 1:
-        #         naboCeller.extend([self._rutenett[rad + 1][kolonne], self._rutenett[rad][kolonne - 1], self._rutenett[rad + 1][kolonne - 1]])
-        #     else:
-        #         naboCeller.extend([self._rutenett[rad + 1][kolonne], self._rutenett[rad][kolonne + 1], self._rutenett[rad + 1][kolonne + 1], self._rutenett[rad][kolonne - 1], self._rutenett[rad + 1][kolonne - 1]])
-        #   #  return
-
-        # if rad == self._rader - 1:
-        #     if kolonne == 0:
-        #         naboCeller.extend([self._rutenett[rad - 1][kolonne], self._rutenett[rad][kolonne + 1], self._rutenett[rad + 1][kolonne + 1]])
-        #     elif kolonne == self._kolonner - 1:
-        #         naboCeller.extend([self._rutenett[rad - 1][kolonne], self._rutenett[rad][kolonne - 1], self._rutenett[rad - 1][kolonne - 1]])
-        #     else:
-        #         naboCeller.extend([self._rutenett[rad][kolonne - 1], self._rutenett[rad][kolonne + 1], self._rutenett[rad - 1][kolonne], self._rutenett[rad - 1][kolonne - 1], self._rutenett[rad - 1][kolonne + 1]])
-        #   #  return
-
-        # if kolonne == 0:
-        #         naboCeller.extend([self._rutenett[rad][kolonne + 1], self._rutenett[rad + 1][kolonne], self._rutenett[rad - 1][kolonne], self._rutenett[rad + 1][kolonne + 1], self._rutenett[rad - 1][kolonne + 1]])
-        #         # return
-        # elif kolonne == self._kolonner - 1:
-        #         naboCeller.extend([self._rutenett[rad][kolonne - 1], self._rutenett[rad + 1][kolonne], self._rutenett[rad - 1][kolonne], self._rutenett[rad - 1][kolonne - 1], self._rutenett[rad + 1][kolonne - 1]])
-        #         # return
-
-        # if len(naboCeller) == 0:
-        #         naboCeller.extend([self._rutenett[rad - 1][kolonne - 1], self._rutenett[rad - 1][kolonne], self._rutenett[rad - 1][kolonne + 1], self._rutenett[rad][kolonne - 1], self._rutenett[rad][kolonne + 1], self._rutenett[rad + 1][kolonne - 1], self._rutenett[rad + 1][kolonne + 1], self._rutenett[rad + 1][kolonne]])
-            
-
-
-            
-
-
-
-
-    
     def finnAntallLevende(self):
         pass
