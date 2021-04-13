@@ -1,13 +1,17 @@
 from spillebrett import Spillebrett
 
 def main():
-    brett = Spillebrett(6,6)
+    print('HEI!\nVelkommen til "Game of life"')
+    rad = int(input('Oppgi antall rader:\n>>> '))
+    kolonne = int(input('Oppgi antall kolonner:\n>>> '))
+    brett = Spillebrett(rad, kolonne)
     brett.tegnBrett()
-    brett.finnNabo(4,4)
-    brett.finnNabo(0,0)
-    brett.finnNabo(0,4)
-    brett.finnNabo(4,0)
-    brett.finnNabo(2,2)
-
+    print(f'Generajon: {brett.hentGenerajsonsNummer()} - Antall levende celler: {brett.finnAntallLevende()}')
+    kommando = input('Press enter for å fortsette. Press q og trykk enter for å avslutte\n>>> ')
+    while kommando != 'q':
+        brett.oppdatering()
+        brett.tegnBrett()
+        print(f'Generajon: {brett.hentGenerajsonsNummer()} - Antall levende celler: {brett.finnAntallLevende()}')
+        kommando = input('Press enter for å se neste generasjon. Press q og trykk enter for å avslutte\n>>> ')
 
 main()

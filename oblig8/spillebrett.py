@@ -18,9 +18,9 @@ class Spillebrett:
         self._generer()
 
     def tegnBrett(self):
-        for _ in range(10):
-            print()
-
+        # for _ in range(10):
+        #     print()
+        print("=================")
         for i in range(self._rader):
             for j in range(self._kolonner):
                 print(self._rutenett[i][j].hentStatusTegn(), end="")
@@ -30,13 +30,39 @@ class Spillebrett:
     def _generer(self):
         for i in range(self._rader):
             for j in range(self._kolonner):
-                tall = random.randint(0,100)
-                if tall <= 33:
+                tall = random.randint(0,2)
+                if tall == 0:
                     self._rutenett[i][j].settLevende()
 
 
     def oppdatering(self):
-        pass
+        dødeCellerSomBlirLevende = []
+        levendeCellerSomDør = []
+        self._generasjonsnummer += 1
+
+        for i in range(self._rader):
+            for j in range(self._kolonner):
+                cellen = self._rutenett[i][j]
+                antallLevendeNaboer = 0
+                naboListe = self.finnNabo(i,j)
+                for nabo in naboListe:
+                    if nabo.erLevende():
+                        antallLevendeNaboer += 1
+                
+                if cellen.erLevende():
+                    if antallLevendeNaboer < 2 or antallLevendeNaboer > 3:
+                        levendeCellerSomDør.append(cellen)
+                else:
+                    if antallLevendeNaboer == 2 or antallLevendeNaboer == 3:
+                        dødeCellerSomBlirLevende.append(cellen)
+                
+        for celle in dødeCellerSomBlirLevende:
+            celle.settLevende()
+        for celle in levendeCellerSomDør:
+            celle.settDoed()
+    
+    def hentGenerajsonsNummer(self):
+        return self._generasjonsnummer
 
     def finnNabo(self, rad, kolonne):
         naboCeller = []
@@ -76,4 +102,9 @@ class Spillebrett:
        
 
     def finnAntallLevende(self):
-        pass
+        antallLevende = 0
+        for i in range(self._rader):
+            for j in range(self._kolonner):
+                if self._rutenett[i][j].erLevende():
+                    antallLevende += 1
+        return antallLevende
