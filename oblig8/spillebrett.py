@@ -101,7 +101,7 @@ class Spillebrett:
 
         return naboCeller
        
-
+    
     def finnAntallLevende(self):
         antallLevende = 0
         for i in range(self._rader):
