@@ -17,6 +17,7 @@ class Spillebrett:
         
         self._generer()
 
+    # Printer ut det generete brettet i terminalen
     def tegnBrett(self):
         # for _ in range(10):
         #     print()
@@ -26,7 +27,7 @@ class Spillebrett:
                 print(self._rutenett[i][j].hentStatusTegn(), end="")
             print()
         
-    
+    # Setter et tilfedig bord, 1/3 sjanse for at det er levende celle
     def _generer(self):
         for i in range(self._rader):
             for j in range(self._kolonner):
@@ -34,7 +35,7 @@ class Spillebrett:
                 if tall == 0:
                     self._rutenett[i][j].settLevende()
 
-
+    # For hver generasjon, oppdateres brettet og er klar for å bli simulert for neste 'enter'-klikk
     def oppdatering(self):
         dødeCellerSomBlirLevende = []
         levendeCellerSomDør = []

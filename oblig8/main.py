@@ -1,5 +1,5 @@
 from spillebrett import Spillebrett
-
+#hovedprogram som spør bruker om input
 def main():
     print('HEI!\nVelkommen til "Game of life"')
     rad = int(input('Oppgi antall rader:\n>>> '))

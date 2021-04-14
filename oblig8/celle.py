@@ -1,3 +1,4 @@
+# Enkel representasjon av en celle for spillebrettet
 class Celle:
     def __init__(self):
         self._status = 'død'
