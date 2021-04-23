@@ -67,37 +67,58 @@ class Spillebrett:
 
     def finnNabo(self, rad, kolonne):
         naboCeller = []
-        # nabotopper for cellen
-        if rad != 0:
-            naboCeller.append(self._rutenett[rad - 1][kolonne])
-            try:
-                naboCeller.append(self._rutenett[rad - 1][kolonne + 1])
-            except IndexError:
-                pass
-            if kolonne != 0:
-                naboCeller.append(self._rutenett[rad - 1][kolonne - 1])
 
-        # venstrenaboer for cellen
-        if kolonne != 0:
-            naboCeller.append(self._rutenett[rad][kolonne - 1])
-            try:
-                naboCeller.append(self._rutenett[rad + 1][kolonne - 1])
-            except IndexError:
-                pass
+        for i in range(-1,2):
+            for j in range(-1,2):
+                naboRad = rad + i
+                naboSete = kolonne + j
 
-        # resterende naboer for cellen
-        try:
-            naboCeller.append(self._rutenett[rad + 1][kolonne + 1])
-        except IndexError:
-            pass
-        try:
-            naboCeller.append(self._rutenett[rad + 1][kolonne])
-        except IndexError:
-            pass
-        try:
-            naboCeller.append(self._rutenett[rad][kolonne + 1])
-        except IndexError:
-            pass
+                gyldig = True
+
+                if i == 0 and j == 0:
+                    gyldig = False
+
+                if naboRad < 0 or naboRad >= self._rader:
+                    gyldig = False
+
+                if naboSete < 0 or naboSete >= self._kolonner:
+                    gyldig = False
+                
+                if gyldig:
+                    naboCeller.append(self._rutenett[naboRad][naboSete])
+
+
+        # # nabotopper for cellen
+        # if rad != 0:
+        #     naboCeller.append(self._rutenett[rad - 1][kolonne])
+        #     try:
+        #         naboCeller.append(self._rutenett[rad - 1][kolonne + 1])
+        #     except IndexError:
+        #         pass
+        #     if kolonne != 0:
+        #         naboCeller.append(self._rutenett[rad - 1][kolonne - 1])
+
+        # # venstrenaboer for cellen
+        # if kolonne != 0:
+        #     naboCeller.append(self._rutenett[rad][kolonne - 1])
+        #     try:
+        #         naboCeller.append(self._rutenett[rad + 1][kolonne - 1])
+        #     except IndexError:
+        #         pass
+
+        # # resterende naboer for cellen
+        # try:
+        #     naboCeller.append(self._rutenett[rad + 1][kolonne + 1])
+        # except IndexError:
+        #     pass
+        # try:
+        #     naboCeller.append(self._rutenett[rad + 1][kolonne])
+        # except IndexError:
+        #     pass
+        # try:
+        #     naboCeller.append(self._rutenett[rad][kolonne + 1])
+        # except IndexError:
+        #     pass
 
         return naboCeller
        
